@@ -11,12 +11,16 @@ public class User {
     private String name;
     private String address;
 
+    //  分支创建password
+    private String password;
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 
@@ -43,4 +47,11 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }
